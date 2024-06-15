@@ -17,7 +17,7 @@ const Home: FC = () => {
     formState: { errors },
   } = useForm();
 
-  const add = (data) => {
+  const add = (data: any) => {
     if (!devices.some((device) => device.ip === data.lastName)) {
       setDevices([...devices, { ip: data.lastName }]);
     }
