@@ -2,7 +2,7 @@
 
 import CustomLineChart from "@/components/linechart";
 import { map } from "lodash";
-
+import { useForm } from "react-hook-form";
 import { FC, useState } from "react";
 
 // Dynamically import the CustomLineChart to ensure it only loads on the client-side
@@ -51,10 +51,3 @@ const Home: FC = () => {
 };
 
 export default Home;
-function useForm(): {
-  register: any;
-  handleSubmit: any;
-  formState: { errors: any };
-} {
-  throw new Error("Function not implemented.");
-}
